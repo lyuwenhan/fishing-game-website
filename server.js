@@ -40,7 +40,7 @@ function closeWs(token){
 	if(!ttoc.has(token) || !ttoto.has(token)){
 		return;
 	}
-	const {conn} = ttoc.get(token);	
+	const {conn} = ttoc.get(token);
 	let {cnt, to} = ttoto.get(token);
 	if(!conn || cnt === undefined || cnt === null){
 		ttoc.delete(token);
@@ -56,7 +56,7 @@ function closeWs(token){
 			if(!ttoc.has(token) || !ttoto.has(token)){
 				return;
 			}
-			const {conn} = ttoc.get(token);	
+			const {conn} = ttoc.get(token);
 			let {cnt, to} = ttoto.get(token);
 			ttoc.delete(token);
 			ttoto.delete(token);
